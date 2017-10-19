@@ -1,0 +1,39 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+program Menghitung_harga_diskon;
+uses crt;
+var
+a,b:Boolean;
+CD,CM:Char;
+{CEK DISKON} {CEK MEMBER}
+BD,HN,HA,UC,K:real;
+{BESAR DISKON} {HARGA NORMAL} {HARGA AKHIR}
+{UANG CASH} {KEMBALIAN}
+
+begin
+Write('Masukan Harga     :');readln(HN);
+write('Cek Diskon(Yes,No):');readln(CD);
+Write('Cek Member(Yes,No):');readln(CM);
+
+a:='Y'=CD;
+b:='Y'=CM;
+if a and b then
+BD:=(HN*25/100)
+else
+if a and not b then
+BD:=(HN*20/100)
+else
+BD:=0;
+
+HA:=HN-BD;
+writeln('Total             :',HA:2:2);
+write('Uang Cash         :');readln(UC);
+K:=UC-HA;
+WriteLn('Kembalian         :',K:2:2);
+
+readkey;
+end.
