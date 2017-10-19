@@ -1,0 +1,36 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+program anak ayam;
+
+var
+a:integer;
+
+begin
+
+a:=10;
+    writeln('anak ayam turun',a);
+    writeln('mati satu tinggal',a-1);
+    writeln('anak ayam turun',a-1);
+    writeln('mati satu tinggal',a-2);
+    writeln('anak ayam turun',a-2);
+    writeln('mati satu tinggal',a-3);
+    writeln('anak ayam turun',a-3);
+    writeln('mati satu tinggal',a-4);
+    writeln('anak ayam turun',a-4);
+    writeln('mati satu tinggal',a-5);
+    writeln('anak ayam turun',a-5);
+    writeln('mati satu tinggal',a-6);
+    writeln('anak ayam turun',a-6);
+    writeln('mati satu tinggal',a-7);
+    writeln('anak ayam turun',a-7);
+    writeln('mati satu tinggal',a-8);
+    writeln('anak ayam turun',a-8);
+    writeln('mati satu tinggal',a-9);
+    writeln('anak ayam turun',a-9);
+    writeln('mati satu tinggal induknya');
+    
+end.
