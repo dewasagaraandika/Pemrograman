@@ -1,0 +1,22 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+program menghitung_luas_persegi_panjang;
+uses crt;
+var
+panjang,lebar:integer;
+hasil:integer;
+
+begin
+
+write('Masukan panjang:');readln(panjang);
+write('Masukan lebar:');readln(lebar);
+
+hasil:=panjang*lebar;
+write('luas persegi panjang=',hasil);
+
+readkey;
+end.
