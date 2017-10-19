@@ -1,0 +1,7 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+Nilai i= 6.0 b= 8.0 c= 0.0
