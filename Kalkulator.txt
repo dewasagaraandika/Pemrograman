@@ -1,0 +1,30 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+uses crt;
+var
+s:char;
+{simbol}
+a,b:integer;
+hasil: real;
+
+begin
+
+write('Masukan nilai a:');readln(a);
+write('Masukan nilai b:');readln(b);
+write('Masukan Simbol (+) (-) (*) (/) :');readln(s);
+if (s='+') then
+hasil:=a+b;
+if (s='-') then
+hasil:=a-b;
+if (s='*') then
+hasil:=a*b;
+if (s='/') then
+hasil:=a/b;
+writeln('Hasilnya:',hasil:2:2);
+
+readkey;
+end.
