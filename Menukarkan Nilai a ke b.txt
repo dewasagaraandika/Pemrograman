@@ -1,0 +1,22 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+uses crt;
+var
+a,b:integer;
+
+begin
+
+
+writeln('program menukarkan niali a ke b');
+write('masukan nilai a:');readln(b);
+write('masukan niali b:');readln(a);
+
+writeln('niali a:',a);
+writeln('nilai b:',b);
+
+readkey;
+end.
