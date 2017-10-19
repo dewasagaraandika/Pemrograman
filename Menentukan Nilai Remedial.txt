@@ -1,0 +1,38 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+program Menentukan_nilai_remedial;
+uses crt;
+var
+a,b,c,d,e:integer;
+
+begin
+write('Masukan Nilai Alpro:');readln(a);
+write('Masukan Nilai SBO:');readln(b);
+write('Masukan Nilai RTI:');readln(c);
+write('Masukan Nilai B.Indonesia:');readln(d);
+write('Masukan Nilai Pancasila:');readln(e);
+writeln;
+if a<=50 then
+writeln('Remedial Mata Kuliah Alpro');
+if b<=50 then
+writeln('Remedial Mata Kuliah SBO');
+if c<=50 then
+writeln('Remedial Mata Kuliah RTI');
+if d<50 then
+writeln('Remedial Mata Kuliah B.Indonesia');
+if e<=50 then
+writeln('Remedial Mata Kuliah Pancasila')
+else
+if a>50 then
+if b>50 then
+if c>50 then
+if d>50 then
+if e>50 then
+writeln('Anda Tidak Mendapat Remedial');
+
+readkey;
+end.
