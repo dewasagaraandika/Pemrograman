@@ -1,0 +1,44 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+program Huruf_mutu_mata_kuliah;
+uses crt;
+var
+absen,tugas,quiz,uts,uas,nilai:real;
+Huruf_Mutu:char;
+
+begin
+writeln('Mata Kuliah PTI');
+writeln;
+writeln('absen:10%');
+writeln('tugas:15%');
+writeln('quiz :15%');
+writeln('uts  :25%');
+writeln('uas  :35%');
+writeln;
+write('Masukan Nilai Absen:');readln(absen);
+write('Masukan Nilai Tugas:');readln(tugas);
+write('Masukan Nilai Quiz :');readln(quiz);
+write('Masukan Nilai UTS  :');readln(uts);
+write('Masukan Nilai UAS  :');readln(uas);
+
+nilai:=(absen*0.1)+(tugas*0.15)+(quiz*0.15) +(uts*0.25)+(uas*0.35);
+writeln('Nilai              :',nilai:2:2);
+ 
+if (nilai>85) and (nilai<=100) then 
+Huruf_Mutu:='A'
+else if (nilai>70) and (nilai<=85) then 
+Huruf_Mutu:='B'
+else if (nilai>55) and (nilai<=70) then 
+Huruf_Mutu:='C'
+else if (nilai>40) and (nilai<=55) then 
+Huruf_Mutu:='D'
+else if (nilai>=0) and (nilai<=40) then 
+Huruf_Mutu:='E';
+writeln;
+writeln('Huruf Mutu         :',Huruf_Mutu);
+
+readkey;
+end.
