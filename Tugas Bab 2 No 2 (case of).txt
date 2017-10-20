@@ -1,0 +1,54 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+program Menghitung_gaji_bersih;
+uses crt;
+var
+N:string;
+{NAMA} 
+G,S:char;
+{GOLONGAN} {STATUS}
+T,GB,GP,P:real;
+{TUNJANGAN} {GAJI BERSIH} {GAJI POKOK} 
+{POTONGAN IURAN}
+begin
+
+write('Nama Karyawan:');readln(N);
+write('Golongan(A/B):');readln(G);
+
+case G of 
+'A':begin
+GP:=200000;
+writeln('Gaji Pokok.  :',GP:2:2);
+write('Status (Nikah(Y)/Belum(N)):');readln(S);
+if S='Y'then
+T:=50000
+else if S='N' then
+T:=25000;
+writeln('Tunjangan.   :',T:2:2);
+P:=(GP+T)*5/100;
+writeln('Potongan Iuran:',P:2:2);
+GB:=(GP+T)-P;
+writeln('Gaji Bersih. :',GB:2:2);
+end;
+
+'B':begin
+GP:=350000;
+writeln('Gaji Pokok.  :',GP:2:2);
+write('Status (Nikah(Y)/Belum(N):');readln(S);
+if S='Y'then
+T:=75000
+else if S='N' then
+T:=60000;
+writeln('Tunjangan.   :',T:2:2);
+P:=(GP+T)*10/100;
+writeln('Potongan Iuran:',P:2:2);
+GB:=(GP+T)-P;
+writeln('Gaji Bersih. :',GB:2:2);
+end;
+end;
+
+readkey;
+end.
