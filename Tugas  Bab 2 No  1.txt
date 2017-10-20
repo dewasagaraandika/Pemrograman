@@ -1,0 +1,14 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+Absen = 100.00
+Tugas = 80.00
+Quiz  = 40.00
+UTS   = 60.00
+UAS   = 50.00
+
+Nilai = 43.50
+
+Huruf Mutu : D
