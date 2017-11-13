@@ -1,0 +1,115 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+
+program Segitiga_bintang;
+uses crt;
+var
+pilih,i,j,n: integer;
+b:char;
+
+begin
+repeat
+writeln('        >>>>MENU<<<<      ');
+writeln('1.Segitiga Bintang Rata Kanan');
+writeln('2.Segitiga Bintang Rata Kiri');
+writeln('3.Segitiga Bintang Rata Tengah');
+writeln('4.Segitiga Pascal');
+writeln('0.Keluar Program');
+write('Pilih menu : ');readln(pilih);
+case pilih of
+
+1 : begin
+repeat
+writeln('Segitiga Bintang Rata Kanan');
+write('Masukan jumlah baris:');readln(n);
+for i:=n downto 1 do
+begin
+
+for j:=1 to n do
+begin
+if (j<i) then 
+write (' ')
+else
+write('*');
+end;
+
+writeln(' ');
+end;
+write('Kembali Ke Menu y/n:');readln(b);
+until(b='y');
+end;
+
+2 : begin
+repeat
+writeln('Segitiga Bintang Rata Kiri');
+write('Masukan jumlah baris:');readln(n);
+for i := 1 to n do
+begin
+
+for j := 1 to i do
+begin
+write('*');
+end;
+
+writeln;
+end;
+write('Kembali Ke Menu y/n:');readln(b);
+until(b='y');
+end;
+
+3 : begin
+repeat
+writeln('Segitiga Bintang Rata tengah');
+write('Masukan jumlah baris:');readln(n);
+if n>=3 then
+for i:=1 to n do
+begin
+for j:=1 to n-i do
+begin
+write (' ');
+end;
+
+for j:=i downto 1 do
+begin
+write('* ');
+end;
+writeln;
+end;
+write('Kembali Ke Menu y/n:');readln(b);
+until(b='y');
+end;
+
+4 : begin
+repeat
+writeln('Segitiga Pascal');
+write('Masukan jumlah baris:');readln(n);
+if n>=3 then
+for i:=1 to n do
+begin
+for j:=1 to n-i do
+begin
+write (' ');
+end;
+for j:=i downto 1 do
+begin
+write(j,' ');
+end;
+writeln;
+end;
+write('Kembali Ke Menu y/n:');readln(b);
+until(b='y');
+end;
+
+0 : begin
+writeln;
+writeln('Keluar Program');
+end;
+
+end;
+until pilih=0;
+readkey;
+end.
