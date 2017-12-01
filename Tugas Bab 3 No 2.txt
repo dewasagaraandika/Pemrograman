@@ -1,0 +1,31 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+program sinus_consinus;
+uses crt; 
+var 
+x : integer; 
+sinus,consinus : real; 
+
+begin 
+
+writeln('   x     sin(x) cos(x)');
+writeln('  ---    -----  -----');
+
+x:=0; 
+while x <= 360 do 
+
+begin 
+sinus:=sin(x/57.2958);
+consinus:=cos(x/57.2958);
+
+writeln(x:5,sinus:8:2,consinus:8:2);
+
+x:=x+30; 
+end; 
+
+readkey; 
+end.
