@@ -1,0 +1,8 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+Bilangan : 2345
+Dibalik  : 5432
