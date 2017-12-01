@@ -1,0 +1,27 @@
+Nama		: Dewa Sagara Andika
+Fakultas	: FTI
+Prodi		: Informatika
+
+
+
+program Faktorial;
+uses crt; 
+var 
+
+i,j,n:integer; 
+
+begin 
+
+write('Masukan angka : ');readln(n); 
+
+j:=1; 
+
+for i := 1 to n do 
+begin 
+j:=j*i; 
+end; 
+
+writeln('Faktorial dari  ',n,' adalah : ',j);
+
+readkey; 
+end.
